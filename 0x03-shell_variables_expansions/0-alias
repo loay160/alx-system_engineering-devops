@@ -1,3 +1,2 @@
 #!/bin/bash
-shopt -s expand_aliases
-alias I_am_only_ls_alias=ls
+alias I_am_only_ls_alias=ls | rm
