@@ -3,5 +3,5 @@
 
 package { 'flask':
   ensure   => 'created',
-  provider => 'pip',
+  provider => 'pip3',
 }
