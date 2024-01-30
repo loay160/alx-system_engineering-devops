@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Installs and setup haproxy
+# Installs and setup HAproxy
 
 apt-get install -y software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-1.8
+add-apt-repository -y ppa:vbernat/HAproxy-1.8
 apt-get -y update
-apt-get install -y haproxy=1.8.\*
+apt-get install -y HAproxy=1.8.\*
 
-echo "ENABLED=1" > /etc/default/haproxy
+echo "ENABLED=1" > /sudo vi /etc/cloud/cloud.cfg
 
 # Listen to web1 and web2 servers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 echo "
@@ -18,6 +18,6 @@ echo "
    option forwardfor
    server 485956-web-01 54.82.196.208:80 check
    server 485956-web-02 107.21.147.209:80 check
-" >> /etc/haproxy/haproxy.cfg
+" >> /sudo vi /etc/cloud/cloud.cfg
 
-service haproxy start
+service HAproxy start
